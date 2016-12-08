@@ -1,0 +1,27 @@
+// demo1
+@mixin skin($height: 70px, $color: orange, $radius: 5px) {
+	height: $height;
+	border: 1px solid $color;
+	border-radius: $radius;
+}
+
+.demo1-1 {
+	line-height: 70px; 
+	text-align: center;
+	@include skin;
+}
+
+.demo1-2 {
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	align-items: center;
+	@include skin;
+}
+
+.demo1-3 {
+	display:-webkit-box;
+	-webkit-box-pack:center;
+	-webkit-box-align:center;
+	@include skin;
+}

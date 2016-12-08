@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>CSS-demo(@Ruth92)</title>
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<link rel="stylesheet" href="demo3.css">
+</head>
+<body>
+
+	<p>demo3-1：</p>
+	<p>两栏等宽布局：float</p>
+	<div class="demo3-1">
+		<div class="col-1"></div>
+		<div class="col-2"></div>
+	</div>
+
+	<p>demo3-2：</p>
+	<p>两栏等宽布局</p>
+	<p>要想中间有空隙，可以给两栏分别加上左右边框，但：box-sizing:border-box</p>
+	<div class="demo3-2">
+		<div class="col-1"></div>
+		<div class="col-2"></div>
+	</div>
+
+	<p>三栏等宽布局：float</p>
+	<div class="demo3-21">
+		<div class="col-1"></div>
+		<div class="col-2"></div>
+		<div class="col-3"></div>
+	</div>
+
+	<p>demo3-3：</p>
+	<p>两栏等宽布局：inline-blcok(不建议使用)</p>
+	<p>解决inline-block元素间的换行符间隙问题：font-size:0</p>
+	<div class="demo3-3">
+		<div class="col-1"></div>
+		<div class="col-2"></div>
+	</div>
+
+	<p>三栏等宽布局：inline-blcok(不建议使用)</p>
+	<div class="demo3-31">
+		<div class="col-1"></div>
+		<div class="col-2"></div>
+		<div class="col-3"></div>
+	</div>
+
+	<p>demo3-4：</p>
+	<p>两栏等宽布局：flex（推荐，中间通过边框留空隙也不会挤下去）</p>
+	<div class="demo3-4">
+		<div class="col-1"></div>
+		<div class="col-2"></div>
+	</div>
+
+	<p>三栏等宽布局：flex（推荐，中间通过边框留空隙也不会挤下去）</p>
+	<div class="demo3-41">
+		<div class="col-1"></div>
+		<div class="col-2"></div>
+		<div class="col-3"></div>
+	</div>
+
+	<p>demo3-5：</p>
+	<p>两栏布局，左边固定，右边自适应：float</p>
+	<div class="demo3-5">
+		<div class="col-1"></div>
+		<div class="col-2">aaaaaaa</div>
+	</div>
+
+	<p>demo3-6：</p>
+	<p>两栏布局，左边固定，右边自适应：position ——> 左边元素相对于父元素绝对定位</p>
+	<p>float和position:absolute都脱离文档流</p>
+	<div class="demo3-6">
+		<div class="col-1"></div>
+		<div class="col-2">bbbbbbb</div>
+	</div>
+
+	<p>demo3-8：</p>
+	<p>两栏布局，左边固定，右边自适应：flex</p>
+	<div class="demo3-8">
+		<div class="col-1"></div>
+		<div class="col-2">ccccccc</div>
+	</div>
+	
+
+</body>
+</html>

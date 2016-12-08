@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>CSS-demo(@Ruth92)</title>
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<link rel="stylesheet" href="demo4.css">
+</head>
+<body>
+
+	<p>demo4-1：flex + position: absolute;</p>
+	<p>position: relative——>相对于自身进行定位；position: absolute——>相对于上级已被定位的元素进行定位</p>
+	<div class="demo4-1">
+		<div class="col-left">
+			<h1>大标题</h1>
+			<h2>小标题</h2>
+		</div>
+		<div class="col-right"></div>
+	</div>
+
+	<p>demo4-2：</p>
+	<div class="demo4-2">
+		<div class="col-left">
+			
+		</div>
+		<div class="col-middle">
+			<h1>大标题</h1>
+			<h2>小标题</h2>
+		</div>
+		<div class="col-right">
+			
+		</div>
+	</div>
+
+	<p>demo4-3：</p>
+	<p>A宽高已知，相对于父元素(position:relative;)水平垂直居中：position:absolute; + top:50%;left: 50%;margin-top:-heightA;margin-left:-widthA;</p>
+	<div class="demo4-3">
+		<div class="child">A</div>
+	</div>
+
+	<p>demo4-4：</p>
+	<p>A宽高未知，相对于父元素(position:relative;)水平垂直居中：position:absolute; + margin:auto + top:0;left:0;right:0;bottom:0;</p>
+	<div class="demo4-4">
+		<div class="child">A</div>
+	</div>
+
+	<p>demo4-5：</p>
+	<p>A宽高未知，相对于父元素(position:relative;)水平垂直居中：position:absolute; + top:50%;left: 50%;transform:translate(-50%, -50%);</p>
+	<div class="demo4-5">
+		<div class="child">A</div>
+	</div>
+	
+
+</body>
+</html>

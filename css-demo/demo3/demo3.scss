@@ -1,0 +1,180 @@
+// demo3
+
+.demo3-1 {
+	.col-1, .col-2 {
+		height: 40px;
+		width: 50%;
+		float: left;
+	}
+	.col-1 {
+		background: #00f;
+	}
+	.col-2 {
+		background: #0f0;
+	}
+}
+
+.demo3-2 {
+	.col-1, .col-2 {
+		height: 40px;
+		width: 50%;
+		float: left;
+		box-sizing: border-box;
+	}
+	.col-1 {
+		background: #00f;
+		border-right: 1px solid #fff;
+	}
+	.col-2 {
+		background: #0f0;
+		border-left: 1px solid #fff;
+	}
+}
+
+.demo3-21 {
+	.col-1, .col-2, .col-3 {
+		height: 40px;
+		width: 33%;
+		float: left;
+		border-right: 1px solid #ccc;
+	}
+	.col-1 {
+		background: #00f;
+	}
+	.col-2 {
+		background: #0f0;
+	}
+	.col-3 {
+		background: #f00;
+	}
+}
+
+.demo3-3 {
+	// letter-spacing: -10px;
+	font-size: 0;
+	.col-1, .col-2 {
+		height: 40px;
+		width: 50%;
+		display: inline-block;
+	}
+	.col-1 {
+		background: #00f;
+	}
+	.col-2 {
+		background: #0f0;
+	}
+}
+
+.demo3-31 {
+	font-size: 0;
+	.col-1, .col-2, .col-3 {
+		height: 40px;
+		width: 33%;
+		display: inline-block;
+	}
+	.col-1 {
+		background: #00f;
+	}
+	.col-2 {
+		background: #0f0;
+	}
+	.col-3 {
+		background: #f00;
+	}
+}
+
+.demo3-4 {
+	display: felx;
+	display: -webkit-flex;
+	.col-1, .col-2 {
+		height: 40px;
+		flex: 1;
+		-webkit-flex: 1;
+		width: 50%;
+	}
+	.col-1 {
+		background: #00f;
+		border-right: 2px solid #fff;
+	}
+	.col-2 {
+		background: #0f0;
+	}
+}
+.demo3-41 {
+	display: felx;
+	display: -webkit-flex;
+	width: 100%;
+	.col-1, .col-2, .col-3 {
+		height: 40px;
+		flex: 1;
+		-webkit-flex: 1;
+		border-right: 2px solid #fff;
+	}
+	.col-1 {
+		background: #00f;
+	}
+	.col-2 {
+		background: #0f0;
+	}
+	.col-3 {
+		background: #f00;
+	}
+}
+
+.demo3-5 {
+	width: 500px;
+	background: #333;
+	border: 1px solid #333;
+	.col-1 {
+		width: 150px;
+		height: 40px;
+		float: left;
+		background: #00f;
+	}
+	.col-2 {
+		height: 50px;
+		background: #0f0;
+		margin-left: 170px;
+		// overflow: hidden;
+	}
+}
+
+.demo3-6 {
+	width: 500px;
+	background: #333;
+	border: 1px solid #333;
+	position: relative;
+	.col-1 {
+		width: 150px;
+		height: 40px;
+		background: #00f;
+		position: absolute;
+	}
+	.col-2 {
+		height: 50px;
+		background: #0f0;
+		margin-left: 150px;
+	}
+}
+
+.demo3-8 {
+	width: 500px;
+	background: #333;
+	border: 1px solid #333;
+	display: flex;
+	display: -webkit-flex;
+	.col-1, .col-2 {
+		height: 40px;
+	}
+	.col-1 {
+		width: 150px;
+		background: #00f;
+		border-right: 2px solid #fff;
+	}
+	.col-2 {
+		background: #0f0;
+		flex: 1;
+		-webkit-flex: 1;
+	}
+}
+

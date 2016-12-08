@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>CSS-demo(@Ruth92)</title>
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<link rel="stylesheet" href="demo-checkbox.css">
+</head>
+<body>
+
+
+	<p><em>示例1：</em></p>
+	<div class="wrap wrap-1">
+		<label>性别：</label>
+
+		<div class="cb-wrap">	<!-- 整体为一个checkbox，用div包裹 -->
+			<input type="radio" name="sex1" value="男"></input>  <!-- 需要隐藏，置于最上层 -->
+			<span class="cb-icon"></span>	<!-- 加伪类，模拟checkbox样式 -->
+			<span class="cb-label">男</span>	<!-- 当选中时，字体颜色也得改变 -->
+		</div>
+
+		<div class="cb-wrap">
+			<input type="radio" name="sex1" value="女"></input>
+			<span class="cb-icon"></span>
+			<span class="cb-label">女</span>
+		</div>
+
+	</div>
+
+
+	<p><em>示例2：</em></p>
+	<div class="wrap wrap-2">
+		<label>性别：</label>
+
+		<div class="cb-wrap">
+			<input type="radio" name="sex2" value="男"></input>
+			<span class="cb-icon">男</span>
+		</div>
+
+		<div class="cb-wrap">
+			<input type="radio" name="sex2" value="女"></input>
+			<span class="cb-icon">女</span>
+		</div>
+
+	</div>
+	
+	
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+// demo-citySelect
+.select {
+	margin-bottom: 50px;
+}
+#city_select {
+	width: 200px;
+	height: 30px;
+}
+
+.city-wrap {
+	padding: 10px 17px;
+	border: 1px solid #ddd;
+	width: 430px;
+	height: 240px;
+
+	.top-index {
+		border-bottom: 2px solid #ddd;
+		height: 25px;
+		padding-left: 10px;
+
+		a {
+			text-decoration: none;
+			color: #333;
+		}
+	}
+
+
+}

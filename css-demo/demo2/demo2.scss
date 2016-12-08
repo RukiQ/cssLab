@@ -1,0 +1,86 @@
+// demo2
+
+@mixin skin($height: 50px, $color: black, $radius: 0px) {
+	height: $height;
+	border: 1px solid $color;
+	border-radius: $radius;
+}
+
+.demo2-1 {
+	@include skin;
+	line-height: 50px; 
+	text-align: center;
+
+	img {
+		width: 30px; 
+		height: 30px;
+		/* position: relative;
+		top: 10px;
+		right: 5px; */
+		vertical-align: middle;
+		margin-right: 5px;
+	}
+}
+
+.demo2-2 {
+	@include skin;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	align-items: center;
+
+	span {
+		display: inline-block;
+		width: 30px; height: 30px;
+		background: url(../img/logo.png);
+		background-size: 100% 100%;
+		margin-right: 5px;
+	}
+}
+
+.demo2-3 {
+	@include skin;
+	text-align: center;
+	line-height: 50px;
+
+	span {
+		display: inline-block;
+		background: url(../img/logo.png) no-repeat;
+		background-size: 30px 30px;
+		background-position: center left;
+    	padding-left: 35px;
+	}
+}
+
+.demo2-4 {
+	@include skin;
+	position: relative;
+	text-align: center;
+	line-height: 50px;
+	&:before {
+		content: "";
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		border-left: 1px solid #00f;
+		border-bottom: 1px solid #00f;
+		transform: rotate(45deg);
+		position: absolute;
+		top: 15px;
+		left: 10px;
+	}
+	&:after {
+		content: "";
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		border-right: 1px solid #00f;
+		border-bottom: 1px solid #00f;
+		transform: rotate(-45deg);
+		position: absolute;
+		top: 15px;
+		right: 10px;
+	}
+}
+
+
